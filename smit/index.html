@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMIT assignment</title>
+</head>
+<bod y>
+    <form>
+    <h1>Make a Currency Conerter</h1>
+    <label>Pakistani Rs</label>
+    <input type="number" id="pkr">
+    <br>
+    <label>USA Currency</label>
+<input type="number" id="dollar" >
+<br>
+<button onclick="myfunction()">convert</button>
+<br>
+<h1 id="result"></h1>
+</form>
+<script>
+    function myfunction(){
+        let pk=document.getElementById("pkr").value;
+        let us=pk*0.0059;
+        document.getElementById("dollar").value=us;
+            } 
+            </script>
+</body>
+</html>

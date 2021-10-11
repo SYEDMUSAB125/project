@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+</head>
+<h1>Grade checker</h1>
+<label for="user">type your grade</label>
+<br>
+<br>
+<input type="number" id="gpa">
+<br>
+<br>
+<button onclick function="myfunction">check</button>
+<br>
+<h1 id = "result">result</h1>
+<body>
+    <script>
+         function myfunction() {
+            let num1 = document.getElementById("gpa").value
+            let num2=document.getElementById("result").value;
+            let marks = 90;
+
+if ((marks > 80) || (marks === 80) ) {
+
+    document.getElementById("result")
+        .innerText = "Grade A1"
+        alert("congo")
+        console.log("succesfull");
+
+} else if ((marks >= 70) && (marks <= 79)) {
+
+    document.getElementById("result")
+        .innerText = "Grade A"
+
+} else if ((marks >= 60) && (marks <= 69)) {
+
+    document.getElementById("result")
+        .innerText = "Grade b"
+
+} else if (marks < 60) {
+
+    document.getElementById("result")
+        .innerText = "Fail"
+
+}
+         }
+         documnet.getElementById("result")
+    </script>
+</body>
+</html>
